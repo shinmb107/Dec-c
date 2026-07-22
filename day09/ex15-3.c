@@ -1,0 +1,23 @@
+//#include <stdio.h>
+//#include <string.h>
+//
+//void print_str(char **pps, int cnt);
+//
+//int main() {
+//
+//	char *ptr_ary[] = {"eagle", "tiger", "lion", "squirrel"};
+//	int count;
+//
+//	count = sizeof(ptr_ary) / sizeof(ptr_ary[0]);
+//	print_str(ptr_ary, count);
+//
+//	return 0;
+//}
+//
+//void print_str(char **pps, int cnt) {
+//
+//	for (int i = 0; i < cnt; i++) {
+//		printf("%s\n", pps[i]);
+//		printf("%u\n", *pps[i]);	
+//	}
+//}
