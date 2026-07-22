@@ -1,0 +1,82 @@
+# Project: Project2
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = ex3-3.o ex3-4.o test1.o ex3-5.o ex3-7.o ex3-6.o ex3-8.o "../../Users/shinm/OneDrive/πŸ≈¡\ »≠∏È/ex4-1.o" test_ch3-1(3).o test_ch4-1(3).o ex4-2.o ex3-9.o ex3-10.o ex3-11.o test_ch3-2(3).o my_code.o my_code1.o ex4-3.o ex4-4.o
+LINKOBJ  = ex3-3.o ex3-4.o test1.o ex3-5.o ex3-7.o ex3-6.o ex3-8.o "../../Users/shinm/OneDrive/πŸ≈¡ »≠∏È/ex4-1.o" test_ch3-1(3).o test_ch4-1(3).o ex4-2.o ex3-9.o ex3-10.o ex3-11.o test_ch3-2(3).o my_code.o my_code1.o ex4-3.o ex4-4.o
+LIBS     = -L"C:/Dev_C/Dev-Cpp/MinGW64/lib" -L"C:/Dev_C/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Dev_C/Dev-Cpp/MinGW64/include" -I"C:/Dev_C/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Dev_C/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Dev_C/Dev-Cpp/MinGW64/include" -I"C:/Dev_C/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Dev_C/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Dev_C/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = main.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+ex3-3.o: ex3-3.c
+	$(CC) -c ex3-3.c -o ex3-3.o $(CFLAGS)
+
+ex3-4.o: ex3-4.c
+	$(CC) -c ex3-4.c -o ex3-4.o $(CFLAGS)
+
+test1.o: test1.c
+	$(CC) -c test1.c -o test1.o $(CFLAGS)
+
+ex3-5.o: ex3-5.c
+	$(CC) -c ex3-5.c -o ex3-5.o $(CFLAGS)
+
+ex3-7.o: ex3-7.c
+	$(CC) -c ex3-7.c -o ex3-7.o $(CFLAGS)
+
+ex3-6.o: ex3-6.c
+	$(CC) -c ex3-6.c -o ex3-6.o $(CFLAGS)
+
+ex3-8.o: ex3-8.c
+	$(CC) -c ex3-8.c -o ex3-8.o $(CFLAGS)
+
+"../../Users/shinm/OneDrive/πŸ≈¡\ »≠∏È/ex4-1.o": ../../Users/shinm/OneDrive/πŸ≈¡\ »≠∏È/ex4-1.c
+	$(CC) -c "../../Users/shinm/OneDrive/πŸ≈¡ »≠∏È/ex4-1.c" -o "../../Users/shinm/OneDrive/πŸ≈¡ »≠∏È/ex4-1.o" $(CFLAGS)
+
+test_ch3-1(3).o: test_ch3-1(3).c
+	$(CC) -c test_ch3-1(3).c -o test_ch3-1(3).o $(CFLAGS)
+
+test_ch4-1(3).o: test_ch4-1(3).c
+	$(CC) -c test_ch4-1(3).c -o test_ch4-1(3).o $(CFLAGS)
+
+ex4-2.o: ex4-2.c
+	$(CC) -c ex4-2.c -o ex4-2.o $(CFLAGS)
+
+ex3-9.o: ex3-9.c
+	$(CC) -c ex3-9.c -o ex3-9.o $(CFLAGS)
+
+ex3-10.o: ex3-10.c
+	$(CC) -c ex3-10.c -o ex3-10.o $(CFLAGS)
+
+ex3-11.o: ex3-11.c
+	$(CC) -c ex3-11.c -o ex3-11.o $(CFLAGS)
+
+test_ch3-2(3).o: test_ch3-2(3).c
+	$(CC) -c test_ch3-2(3).c -o test_ch3-2(3).o $(CFLAGS)
+
+my_code.o: my_code.c
+	$(CC) -c my_code.c -o my_code.o $(CFLAGS)
+
+my_code1.o: my_code1.c
+	$(CC) -c my_code1.c -o my_code1.o $(CFLAGS)
+
+ex4-3.o: ex4-3.c
+	$(CC) -c ex4-3.c -o ex4-3.o $(CFLAGS)
+
+ex4-4.o: ex4-4.c
+	$(CC) -c ex4-4.c -o ex4-4.o $(CFLAGS)
